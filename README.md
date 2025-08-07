@@ -1,0 +1,1 @@
+# com.elgato.volume-controller.sdPlugin
