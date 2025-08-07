@@ -1,0 +1,5 @@
+2025-08-07T16:56:04.539Z WARN  Log level cannot be set to DEBUG whilst not in debug mode.
+2025-08-07T16:56:09.775Z WARN  %c Audio Router Connection Closed
+2025-08-07T16:56:09.879Z WARN  %c Audio Router Connection Closed
+2025-08-07T16:56:09.987Z WARN  %c Audio Router Connection Closed
+2025-08-07T16:56:10.097Z ERROR Unable to connect to the Volume Controller server.
