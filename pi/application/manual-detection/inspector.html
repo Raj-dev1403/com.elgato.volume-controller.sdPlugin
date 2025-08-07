@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover"
+		/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<title>com.elgato.volume-controller Property Inspector</title>
+		<link rel="stylesheet" href="../../libs/css/sdpi.css" />
+	</head>
+	<body>
+		<div class="sdpi-wrapper">
+			<div
+				id="unable-to-connect"
+				style="
+					display: none;
+					text-align: center;
+					margin-left: 47px;
+					margin-top: 2px;
+					margin-bottom: 8px;
+				"
+			>
+				<h2 style="display: inline" data-localize>Unable to connect to the audio router.</h2>
+				<br />
+				<h5 style="display: inline" data-localize>You can manually start the audio router by opening 'C:\Program Files\Elgato\Volume Controller\ElgatoAudioControlServer.exe'.</h5>
+			</div>
+			<div id="property-inspector">
+				<form>
+					<input id="controller" name="controller" style="display: none" value="" type="text" />
+					<div style="display: none" class="sdpi-item dial keypad" id="select_single">
+						<div class="sdpi-item-label" data-localize>Application</div>
+						<select id="application" name="application" class="sdpi-item-value select">
+							<option value="" disabled selected hidden></option>
+						</select>
+					</div>
+					<div style="display: none" type="radio" class="sdpi-item" id="type-item">
+						<div class="sdpi-item-label" data-localize>Type</div>
+						<div class="sdpi-item-value">
+							<span class="sdpi-item-child">
+								<input id="set" type="radio" value="set" name="volumeChange" />
+								<label for="set" class="sdpi-item-label"><span></span><div style="display: inline;" data-localize>Set</div></label> <!--this is a hack, I don't have time to fix libs properly-->
+							</span>
+							<span class="sdpi-item-child">
+								<input id="adjust" type="radio" value="adjust" name="volumeChange" />
+								<label for="adjust" class="sdpi-item-label"><span></span><div style="display: inline;" data-localize>Adjust</div></label>
+							</span>
+							<span class="sdpi-item-child">
+								<input id="mute" type="radio" value="mute" name="volumeChange" />
+								<label for="mute" class="sdpi-item-label"><span></span><div style="display: inline;" data-localize>Mute</div></label>
+							</span>
+						</div>
+					</div>
+					<div style="display: none" class="sdpi-item" id="icon-style-item">
+						<div class="sdpi-item-label" data-localize>Icon Style</div>
+						<select class="sdpi-item-value select" name="iconStyle" id="icon-style">
+							<option value="static" data-localize>Static</option>
+							<option value="vertical" data-localize selected>Slider (vertical)</option>
+							<option value="horizontal" data-localize>Slider (horizontal)</option>
+						</select>
+					</div>
+					<div id="volume-step-item" style="display: none" type="range" class="sdpi-item">
+						<div class="sdpi-item-label" data-localize>Step Size</div>
+						<div class="sdpi-item-value">
+							<span id="min" class="clickable" value="-25">-25</span>
+							<input
+								class="floating-tooltip"
+								data-suffix=" %"
+								type="range"
+								min="-25"
+								max="25"
+								name="volumeStep"
+								id="volume-step"
+							/>
+							<span id="max" class="clickable" value="25">25</span>
+						</div>
+					</div>
+					<div id="volume-item" style="display: none" type="range" class="sdpi-item">
+						<div class="sdpi-item-label" data-localize="">Volume</div>
+						<div class="sdpi-item-value">
+							<span id="min" class="clickable" value="0">0</span>
+							<input
+								class="floating-tooltip"
+								data-suffix=" %"
+								type="range"
+								min="0"
+								max="100"
+								name="volume"
+								id="volume"
+							/>
+							<span id="max" class="clickable" value="100">100</span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="sdpi-info-label hidden" style="top: -1000" value=""></div>
+		<script src="../../libs/js/utils.js"></script>
+		<script src="../../libs/js/constants.js"></script>
+		<script src="../../libs/js/events.js"></script>
+		<script src="../../libs/js/api.js"></script>
+		<script src="../../libs/js/property-inspector.js"></script>
+		<script src="../../libs/js/dynamic-styles.js"></script>
+		<script src="../../libs/js/prototypes.js"></script>
+
+		<script src="inspector.js"></script>
+	</body>
+</html>

@@ -1,0 +1,100 @@
+{
+	"Description": "Mix your sound. With the Volume Controller plugin, customize app volume with a key press or dial turn. No more unbalanced audio — no more juggling extra windows and UI sliders. Now adjust or mute app volume independently, all from your Stream Deck.",
+	"com.elgato.volume-controller.auto-detection": {
+		"Name": "Auto Software Detection",
+		"Tooltip": "Create a profile using current apps"
+	},
+	"com.elgato.volume-controller.manual-detection": {
+		"Name": "Manual Software Detection",
+		"Tooltip": "Control volume for a specific app",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "Adjust",
+				"Push": "Mute/unmute"
+			}
+		}
+	},
+	"com.elgato.volume-controller.auto-detection.volume": {
+		"Name": "Auto Volume",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "Adjust",
+				"Push": "Mute/unmute"
+			}
+		}
+	},
+	"com.elgato.volume-controller.input-device-control": {
+		"Name": "Input Device Control",
+		"Tooltip": "Control volume for a specific input device",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "Adjust",
+				"Push": "Mute/unmute"
+			}
+		}
+	},
+	"com.elgato.volume-controller.output-device-control": {
+		"Name": "Output Device Control",
+		"Tooltip": "Control volume for a specific output device",
+		"Encoder": {
+			"TriggerDescription": {
+				"Rotate": "Adjust",
+				"Push": "Mute/unmute"
+			}
+		}
+	},
+	"com.elgato.volume-controller.back-to-profile": {
+		"Name": "Back To Profile"
+	},
+	"com.elgato.volume-controller.auto-detection.mute": {
+		"Name": "Auto Mute"
+	},
+	"com.elgato.volume-controller.auto-detection.volume-down": {
+		"Name": "Auto Volume Down"
+	},
+	"com.elgato.volume-controller.auto-detection.volume-up": {
+		"Name": "Auto Volume Up"
+	},
+	"com.elgato.volume-controller.auto-detection.next": {
+		"Name": "Auto Next"
+	},
+	"com.elgato.volume-controller.auto-detection.previous": {
+		"Name": "Auto Previous"
+	},
+	"Localization": {
+		"This device is not supported at this time.": "This device is not supported at this time.",
+		"Unable to connect to the audio router.": "Unable to connect to the audio router.",
+		"Requires an active livestream and a game selected.": "Requires an active livestream and a game selected.",
+		"You can manually start the audio router by opening 'C:\\Program Files\\Elgato\\Volume Controller\\ElgatoAudioControlServer.exe'.": "You can manually start the audio router by opening 'C:\\Program Files\\Elgato\\Volume Controller\\ElgatoAudioControlServer.exe'.",
+		"Device Settings": "Device Settings",
+		"Show Apps": "Show Apps",
+		"All": "All",
+		"Active Only": "Active Only",
+		"Step Size": "Step Size",
+		"Volume": "Volume",
+		"Application": "Application",
+		"Type": "Type",
+		"Adjust": "Adjust",
+		"Mute": "Mute",
+		"Set": "Set",
+		"Icon Style": "Icon Style",
+		"Static": "Static",
+		"Slider (vertical)": "Slider (vertical)",
+		"Slider (horizontal)": "Slider (horizontal)",
+		"Default Device": "Default Device",
+		"Default Device (Communication)": "Default Device (Communication)",
+		"Device": "Device",
+		"Action": "Action",
+		"Mute Output Volume": "Mute Output Volume",
+		"Set Output Volume": "Set Output Volume",
+		"Adjust Output Volume": "Adjust Output Volume",
+		"Adjust Input Gain": "Adjust Input Gain",
+		"Adjust Input Volume": "Adjust Input Volume",
+		"Set Gain": "Set Gain",
+		"Adjust Gain": "Adjust Gain",
+		"Mute Microphone": "Mute Microphone",
+		"Fader (vertical)": "Fader (vertical)",
+		"Fader (horizontal)": "Fader (horizontal)",
+		"Please select...": "Please select..."
+	}
+}
